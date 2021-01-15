@@ -7,8 +7,8 @@ import { Filters } from '../models/card.model';
   providedIn: 'root'
 })
 export class SpaceXService {
-
-  private baseURL = 'https://api.spaceXdata.com/v3/launches?limit=10';
+  noOfRecords = 20;
+  private baseURL = `https://api.spaceXdata.com/v3/launches?limit=${this.noOfRecords}`;
 
   constructor(private http: HttpClient) { }
 
