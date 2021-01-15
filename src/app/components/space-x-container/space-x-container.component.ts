@@ -18,8 +18,8 @@ export class SpaceXContainerComponent implements OnInit, OnDestroy {
   private subScriptions = new Subscription();
 
   constructor(private spaceXService: SpaceXService,
-    private router: Router,
-    private route: ActivatedRoute
+              private router: Router,
+              private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -65,4 +65,5 @@ export class SpaceXContainerComponent implements OnInit, OnDestroy {
   }
 
 }
+
 

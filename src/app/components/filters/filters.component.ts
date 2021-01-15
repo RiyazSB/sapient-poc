@@ -35,5 +35,4 @@ export class FiltersComponent implements OnInit {
     }
     this.filtersChanged.emit(this.filters);
   }
-
-}​​​
+}​​

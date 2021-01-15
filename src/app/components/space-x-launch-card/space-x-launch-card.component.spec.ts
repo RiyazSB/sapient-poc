@@ -17,7 +17,7 @@ describe('SpaceXLaunchCardComponent', () => {
     fixture = TestBed.createComponent(SpaceXLaunchCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }); 
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
