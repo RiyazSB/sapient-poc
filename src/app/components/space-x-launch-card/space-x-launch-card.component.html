@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="img-container">
+        <img
+          src="{{record?.imgUrl}}"
+          alt="Avatar"
+          class="image"
+        />
+      </div>
+      <h4 class="item-value">
+        {{ record?.missionName }} #{{record?.flightNumber }}
+      </h4>
+      <h4>Mission Ids:</h4>
+      <ul>
+          <li class="item-value" *ngFor="let id of record.missionIds">{{id}}</li>
+      </ul>
+        <div class="item-container">
+          <h4 class="item-inline">Launch Year: </h4>
+          <span class="item-value">{{record.launch-year}}</span>
+        </div>
+        <div class="item-container">
+          <h4 class="item-inline">Successfull Launch: </h4>
+          <span class="item-value">{{record.launchSuccess}}</span>
+        </div>
+      <div class="item-container">
+        <h4 class="item-inline">Successfull Landing: </h4>
+        <span class="item-value">{{record.launchLanding}}</span>
+      </div>
+</div>

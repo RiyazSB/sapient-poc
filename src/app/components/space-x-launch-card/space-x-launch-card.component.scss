@@ -1,0 +1,79 @@
+@import "src/app/scss/variables";
+@import "src/app/scss/mixins";
+
+.image {
+	height: 100%;
+	width: 100%;
+	display: block;
+	margin: auto;
+	background-color: $bodyBackgroundColor;
+}
+
+.card {
+	padding: 10px;
+	border-radius: 10px;
+}
+.item-value {
+	color: $primaryValueColor;
+}
+
+.item-inline {
+	margin: 5px 0px;
+	display: inline;
+}
+.item-container {
+	margin: 10px 0px;
+}
+
+@include respond-to("small") {
+	.image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+
+	.card {
+		font-size: 1.5rem;
+		padding: 10%;
+	}
+	.item-value {
+		color: $primaryValueColor;
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+	.item-inline {
+		margin: 5px 0px;
+		display: inline;
+	}
+	.item-container {
+		margin: 10px 0px;
+	}
+}
+
+@include respond-to("medium") {
+	.image {
+		height: 100%;
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	.card {
+		padding: 10px;
+	}
+	.item-value {
+		color: $primaryValueColor;
+	}
+
+	.item-inline {
+		margin: 5px 0px;
+		display: inline;
+	}
+	.item-container {
+		margin: 10px 0px;
+	}
+}
+
+@include respond-to("large") {
+}

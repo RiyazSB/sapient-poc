@@ -1,0 +1,12 @@
+<div class="main-container">
+    <div class="container">
+        <div class="filters">
+            <app-filters [filterApplied]="filterApplied" (filtersChanged)="updateFilters($event)"></app-filters>
+        </div>
+        <div class="cards-container">
+            <div *ngFor="let record of spaceXArray" class="card">
+                <app-space-x-launch-card [record]="record"></app-space-x-launch-card>
+            </div>
+        </div>
+    </div>
+</div>

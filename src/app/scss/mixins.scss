@@ -1,0 +1,29 @@
+$breakpoints: (
+  'small': (
+    min-width: 100px,
+    max-width: 699px
+  ),
+  'medium': (
+    min-width: 700px,
+    max-width: 1023px
+  ),
+  'large': (
+    min-width: 1024px
+  )
+);
+ 
+@mixin respond-to($breakpoint) {
+    $raw-query: map-get($breakpoints, $breakpoint);
+    $min-width: map-get($raw-query, 'min-width');
+    $max-width: map-get($raw-query, 'max-width');
+  
+      @if ($max-width) {
+        @media (min-width: $min-width) and (max-width: $max-width) {
+          @content;
+        }
+      } @else {
+        @media (min-width: $min-width) {
+          @content;
+        }
+      }
+  }

@@ -1,0 +1,47 @@
+<div class="filter-container">
+	<h2>Filters</h2>
+	<div>
+		<section class="filter-heading">Launch Year</section>
+		<hr />
+		<div class="launch-year">
+			<button
+				(click)="selectFilter('launch_year', btn.value)"
+				class="year-btn"
+				#btn
+				[ngClass]="{'btn-selected': filters?.launch_year === btn.value }"
+				*ngFor="let year of filterYears"
+				[value]="year"
+			>
+				{{ year }}
+			</button>
+		</div>
+		<section class="filter-heading">Successful Launch</section>
+		<hr />
+		<div class="launch-year">
+			<button
+				(click)="selectFilter('launch_success', btn.value)"
+				class="year-btn"
+				#btn
+				[ngClass]="{'btn-selected': filters.launch_success === btn.value }"
+				*ngFor="let val of btns"
+				[value]="val"
+			>
+        {{val}}
+        </button>
+		</div>
+		<section class="filter-heading">Successful Landing</section>
+		<hr />
+		<div class="launch-year">
+			<button
+				(click)="selectFilter('land_success', btn.value )"
+				class="year-btn"
+				#btn
+				[ngClass]="{'btn-selected': filters.land_success === btn.value}"
+				*ngFor="let val of btns"
+				[value]="val"
+			>
+            {{val}}    
+        </button>
+		</div>
+	</div>
+</div>
