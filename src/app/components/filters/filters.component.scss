@@ -31,7 +31,7 @@ hr {
     border-radius: 4px;
     border: none;
     display: inline-block;
-    padding: 1rem2rem;
+    padding: 1rem 2rem;
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
@@ -48,6 +48,9 @@ hr {
 }
 
 @include respond-to("small") {
+    .btn-selected {
+        background-color: $btnSelected;
+    }
     .year-btn {
         min-width: 7.5rem;
     }
@@ -62,9 +65,6 @@ hr {
         line-height: 2rem;
         text-align: center;
     }
-    ​​​​​​​​ .btn-selected {
-        background-color: $btnSelected;
-    }
 }
 
 @include respond-to("medium") {
@@ -74,7 +74,7 @@ hr {
         border-radius: 4px;
         border: none;
         display: inline-block;
-        padding: 0.5rem1rem;
+        padding: 0.5rem 1rem;
         vertical-align: middle;
         overflow: hidden;
         text-decoration: none;
