@@ -62,6 +62,9 @@ hr {
         line-height: 2rem;
         text-align: center;
     }
+    ​​​​​​​​ .btn-selected {
+        background-color: $btnSelected;
+    }
 }
 
 @include respond-to("medium") {
