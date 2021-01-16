@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     SpaceXLaunchCardComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule
   ],
