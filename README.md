@@ -6,7 +6,7 @@ Application would help the users to list and browse all launches by spaceX progr
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Screenshots](#screenshots)
-* [Live Project](#live)
+* [Live Project](#live-project)
 
 
 ## Genaral info
