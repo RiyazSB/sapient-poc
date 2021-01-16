@@ -25,14 +25,25 @@ user can filter based on parammeters listed below
 * [Typescript](https://www.typescriptlang.org/)
 
 ## Setup
-Clone the repository using git clone [path]()
-* npm install
+Clone the repository using git clone [path](https://github.com/RiyazSB/sapient-poc.git)
+### npm install
   install the dependencies
-* npm run start 
+### npm run start 
   start the dev server
-* npm run build
+### npm run build
  to build the project. the buikd artifacts will be stored in 'dist/' directory.
-* npm run test
+### npm run test
  for running the unit test cases (add --code-coverage for coverage) 
 
 ## Screenshots
+
+### Desktop
+![Desktop](https://i.imgur.com/MVBij1T.jpg)
+
+### Tab
+![Tab](https://i.imgur.com/QbZKAws.jpg)
+
+### Mobile
+![Mobile-View-1](https://i.imgur.com/4ZWPb2c.jpg)
+
+![Mobile-View-2](https://i.imgur.com/iWN0Omz.jpeg)
