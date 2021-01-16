@@ -35,6 +35,9 @@ Clone the repository using git clone [path](https://github.com/RiyazSB/sapient-p
  to build the project. the buikd artifacts will be stored in 'dist/' directory.
 ### npm run test
  for running the unit test cases (add --code-coverage for coverage) 
+### Note
+ as the API doesn't provide the total records we cann't add the pagination. by default number of records hardcoded to 20
+this can be changed in spaceX-service.ts file.
 
 ## Screenshots
 
