@@ -17,13 +17,22 @@ user can filter based on parammeters listed below
 * Successful landing
 
 ## Technologies
-* Angular 8(https://angular.io/)
-* Angular CLI(https://cli.angular.io/)
-* Node(https://nodejs.org/en/)
-* NPM(https://www.npmjs.com/)
-* Angular Universal(https://angular.io/guide/universal)
-* Typescript(https://www.typescriptlang.org/)
+* [Angular 8](https://angular.io/)
+* [Angular CLI](https://cli.angular.io/)
+* [Node](https://nodejs.org/en/)
+* [NPM](https://www.npmjs.com/)
+* [Angular Universal](https://angular.io/guide/universal)
+* [Typescript](https://www.typescriptlang.org/)
 
 ## Setup
+Clone the repository using git clone [path]()
+* npm install
+  install the dependencies
+* npm run start 
+  start the dev server
+* npm run build
+ to build the project. the buikd artifacts will be stored in 'dist/' directory.
+* npm run test
+ for running the unit test cases (add --code-coverage for coverage) 
 
 ## Screenshots
