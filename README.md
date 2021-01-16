@@ -6,7 +6,7 @@ Application would help the users to list and browse all launches by spaceX progr
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Screenshots](#screenshots)
-* [Live Project](https://space-x-launch-riyaz.herokuapp.com/)
+* [Live Project](#live)
 
 
 ## Genaral info
@@ -48,3 +48,7 @@ Clone the repository using git clone [path](https://github.com/RiyazSB/sapient-p
 ![Mobile-View-1](https://i.imgur.com/4ZWPb2c.jpg)
 
 ![Mobile-View-2](https://i.imgur.com/iWN0Omz.jpeg)
+
+## Live Project
+
+URL : https://space-x-launch-riyaz.herokuapp.com/
