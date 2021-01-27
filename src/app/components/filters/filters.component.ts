@@ -40,11 +40,11 @@ export class FiltersComponent implements OnInit {
   download() {
     this.spaceXService.downloadPdf().subscribe(data => {
       const url = window.URL.createObjectURL(data);
-          const link = document.createElement('a');
-          link.href = url;
-          link.download = 'downloadpdffile';
-          link.click();
-          window.URL.revokeObjectURL(url);
-    })
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'downloadpdffile';
+      link.click();
+      window.URL.revokeObjectURL(url);
+    });
   }
 }​​
