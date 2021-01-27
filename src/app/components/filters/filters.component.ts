@@ -42,7 +42,7 @@ export class FiltersComponent implements OnInit {
       const url = window.URL.createObjectURL(data);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'downloadpdffile';
+      link.download = 'dummy';
       link.click();
       window.URL.revokeObjectURL(url);
     });

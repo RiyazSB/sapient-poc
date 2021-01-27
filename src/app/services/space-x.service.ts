@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Filters } from '../models/card.model';
@@ -22,13 +22,14 @@ export class SpaceXService {
   }
 
   downloadPdf() {
-    const url = '/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+    const url = '/assets/dummy.pdf';
+    let headers = new HttpHeaders();
+    // headers = headers.set('Accept', 'application/pdf');
+    // headers = headers.set('Content-Type', 'application/json');
+    // headers = headers.set('Access-Control-Allow-Origin', '*');
     // const url = 'https://e2e.buy-uat.aflac.com/enrollment-policy/v1/policies/abfdb60eab60fa8dcf4876992b0b1f49/document/b7ab472e-51ea-48e0-8322-fdfe13e2adaa';
     const httpOptions = {
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
-      },
+      headers: headers,
       responseType: 'blob' as 'json'
     };
     return this.http.get(url, httpOptions);
