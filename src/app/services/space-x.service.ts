@@ -22,9 +22,11 @@ export class SpaceXService {
   }
 
   downloadPdf() {
-    const url = 'https://e2e.buy-uat.aflac.com/enrollment-policy/v1/policies/abfdb60eab60fa8dcf4876992b0b1f49/document/b7ab472e-51ea-48e0-8322-fdfe13e2adaa';
+    const url = '/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+    // const url = 'https://e2e.buy-uat.aflac.com/enrollment-policy/v1/policies/abfdb60eab60fa8dcf4876992b0b1f49/document/b7ab472e-51ea-48e0-8322-fdfe13e2adaa';
     const httpOptions = {
-      responseType: 'blob' as 'json'
+      'responseType': 'blob' as 'json',
+      'Access-Control-Allow-Origin': '*'
     };
     return this.http.get(url, httpOptions);
   }

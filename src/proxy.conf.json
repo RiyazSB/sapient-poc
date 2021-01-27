@@ -1,0 +1,7 @@
+{
+    "/WAI/*": {
+        "target": "https://www.w3.org",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
