@@ -38,13 +38,26 @@ export class FiltersComponent implements OnInit {
   }
 
   download() {
-    this.spaceXService.downloadPdf().subscribe(data => {
-      const url = window.URL.createObjectURL(data);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'dummy';
-      link.click();
-      window.URL.revokeObjectURL(url);
+    this.spaceXService.downloadPdf().subscribe((file: Blob) => {
+      const fileReader = new FileReader();
+      fileReader.readAsDataURL(file);
+ 
+      const blobType = new Blob([file], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blobType);
+      const aLink = document.createElement('a');
+      aLink.href = url;
+      window.open(url, '_blank');
+      aLink.target = '_blank',
+      aLink.download = 'dummy';
+      document.body.appendChild(aLink);
+      aLink.click();
+      aLink.remove();
+      // const url = window.URL.createObjectURL(data);
+      // const link = document.createElement('a');
+      // link.href = url;
+      // link.download = 'dummy';
+      // link.click();
+      // window.URL.revokeObjectURL(url);
     });
   }
 }​​
