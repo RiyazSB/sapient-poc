@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import { Filters } from 'src/app/models/card.model';
 import * as _ from 'lodash';
+import { SpaceXService } from 'src/app/services/space-x.service';
 
 @Component({
   selector: 'app-filters',
@@ -9,7 +10,7 @@ import * as _ from 'lodash';
 })
 export class FiltersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private spaceXService: SpaceXService) { }
 
   filters: Filters = {};
   @Output() filtersChanged = new EventEmitter<Filters>();
@@ -34,5 +35,16 @@ export class FiltersComponent implements OnInit {
       delete this.filters[filter];
     }
     this.filtersChanged.emit(this.filters);
+  }
+
+  download() {
+    this.spaceXService.downloadPdf().subscribe(data => {
+      const url = window.URL.createObjectURL(data);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = 'downloadpdffile';
+          link.click();
+          window.URL.revokeObjectURL(url);
+    })
   }
 }​​

@@ -20,4 +20,12 @@ export class SpaceXService {
     });
     return this.http.get(url);
   }
+
+  downloadPdf() {
+    const url = 'https://e2e.buy-uat.aflac.com/enrollment-policy/v1/policies/abfdb60eab60fa8dcf4876992b0b1f49/document/b7ab472e-51ea-48e0-8322-fdfe13e2adaa';
+    const httpOptions = {
+      responseType: 'blob' as 'json'
+    };
+    return this.http.get(url, httpOptions);
+  }
 }
