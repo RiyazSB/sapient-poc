@@ -47,11 +47,11 @@ export class FiltersComponent implements OnInit {
       const aLink = document.createElement('a');
       aLink.href = url;
       window.open(url, '_blank');
-      aLink.target = '_blank',
-      aLink.download = 'dummy';
-      document.body.appendChild(aLink);
-      aLink.click();
-      aLink.remove();
+      // aLink.target = '_blank',
+      // aLink.download = 'dummy';
+      // document.body.appendChild(aLink);
+      // aLink.click();
+      // aLink.remove();
       // const url = window.URL.createObjectURL(data);
       // const link = document.createElement('a');
       // link.href = url;
